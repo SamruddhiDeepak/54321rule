@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panic Page - 54321 Grounding Technique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p>Take a deep breath and let's go through this exercise together.</p>
+
+    <!-- Step 1: 5 Things You Can See -->
+    <div class="step" id="step1">
+      <h2>Could you look around and tell me 5 things you can see?</h2>
+      <div class="inputs">
+        <input type="text" id="see1" placeholder="Thing 1 you can see">
+        <input type="text" id="see2" placeholder="Thing 2 you can see">
+        <input type="text" id="see3" placeholder="Thing 3 you can see">
+        <input type="text" id="see4" placeholder="Thing 4 you can see">
+        <input type="text" id="see5" placeholder="Thing 5 you can see">
+      </div>
+      <button onclick="nextStep(2)" id="next-btn-1" disabled>Next</button>
+    </div>
+
+    <!-- Step 2: 4 Things You Can Touch -->
+    <div class="step" id="step2">
+      <h2>Great! Now, can you find 4 things around you that you can touch? </h2>
+      <div class="inputs">
+        <input type="text" id="touch1" placeholder="Thing 1 you can touch">
+        <input type="text" id="touch2" placeholder="Thing 2 you can touch">
+        <input type="text" id="touch3" placeholder="Thing 3 you can touch">
+        <input type="text" id="touch4" placeholder="Thing 4 you can touch">
+      </div>
+      <button onclick="nextStep(3)" id="next-btn-2" disabled>Next</button>
+    </div>
+
+    <!-- Step 3: 3 Things You Can Hear -->
+    <div class="step" id="step3">
+      <h2>Now, let’s focus on the sounds around you. Can you name 3 things you can hear right now?</h2>
+      <div class="inputs">
+        <input type="text" id="hear1" placeholder="Thing 1 you can hear">
+        <input type="text" id="hear2" placeholder="Thing 2 you can hear">
+        <input type="text" id="hear3" placeholder="Thing 3 you can hear">
+      </div>
+      <button onclick="nextStep(4)" id="next-btn-3" disabled>Next</button>
+    </div>
+
+    <!-- Step 4: 2 Things You Can Smell -->
+    <div class="step" id="step4">
+      <h2>Now, can you identify 2 things you can smell around you?</h2>
+      <div class="inputs">
+        <input type="text" id="smell1" placeholder="Thing 1 you can smell">
+        <input type="text" id="smell2" placeholder="Thing 2 you can smell">
+      </div>
+      <button onclick="nextStep(5)" id="next-btn-4" disabled>Next</button>
+    </div>
+
+    <!-- Step 5: 1 Thing You Can Taste -->
+<div class="step" id="step5">
+    <h2>Finally,can you think of 1 thing you can taste right now?</h2>
+    <div class="inputs">
+      <input type="text" id="taste1" placeholder="Thing you can taste">
+    </div>
+    <button onclick="endExercise()" id="next-btn-5" disabled>Next</button>
+  </div>
+  
+  <!-- End Message -->
+  <div class="step" id="step6" style="display:none;">
+    <h2>You're Done!</h2>
+    <p>Well done🌿Take a deep breath, you're doing beautifully💫</p>
+    <p>I hope you’re starting to feel a bit better💙</p>
+    <p>Would you like to go through this grounding method once more? 🌸 It can help bring a sense of calm whenever you need it. I'm here with you.</p>
+    <button onclick="restartExercise(true)">Yes, I’m feeling better</button>
+    <button onclick="restartExercise(false)">No, let me try again</button>
+  </div>
+  
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

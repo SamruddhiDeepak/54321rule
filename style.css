@@ -1,0 +1,67 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/502426696/photo/beautiful-seascape.jpg?s=612x612&w=0&k=20&c=r0JGQkPUlAmKH2fxU0aZ05UcFUbKAplBrbkPuwhJYlQ='); /* Replace with your own calming image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black; /* Makes text more readable on darker backgrounds */
+  }
+  
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .step {
+    display: none;
+  }
+  
+  .inputs {
+    margin-bottom: 20px;
+  }
+  
+  .inputs input {
+    width: 80%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .step button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .step button:hover {
+    background-color: #45a049;
+  }
+  
+  .end-message {
+    display: none;
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
